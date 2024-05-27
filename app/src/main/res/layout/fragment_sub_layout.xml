@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简易计算器"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:id="@+id/fg_sub_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:lines="3"
+        android:maxLines="3"
+        android:scrollbars="none"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:background="@drawable/result_tv_bg"
+        />
+    <include layout="@layout/fragment_layout_item"
+        android:id="@+id/first_button"/>
+    <include layout="@layout/fragment_layout_item"
+        android:id="@+id/second_button"/>
+    <include layout="@layout/fragment_layout_item"
+        android:id="@+id/third_button"/>
+    <include layout="@layout/fragment_layout_item"
+        android:id="@+id/four_button"/>
+    <include layout="@layout/fragment_layout_item2"
+        android:id="@+id/five_button"/>
+
+
+
+</LinearLayout>

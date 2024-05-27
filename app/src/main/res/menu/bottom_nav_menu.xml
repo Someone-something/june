@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/first_bnv"
+          android:icon="@drawable/selector_first"
+          android:title="消息"/>
+    <item android:id="@+id/second_bnv"
+        android:icon="@drawable/selector_second"
+        android:title="频道"/>
+    <item android:id="@+id/third_bnv"
+        android:icon="@drawable/selector_third"
+        android:title="联系人"/>
+    <item android:id="@+id/four_bnv"
+        android:icon="@drawable/selector_four"
+        android:title="我的"/>
+</menu>
