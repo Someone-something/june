@@ -52,7 +52,7 @@ public class CompoundButtonFragment extends Fragment {
         mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getActivity(),"你点击了"+mLists.get(i),Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(),"你点击了"+mLists.get(i),Toast.LENGTH_SHORT).show();
             }
 
             @Override

@@ -27,6 +27,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.gaofh.june.R;
 import com.gaofh.june.adapter.MyViewPagerAdapterForFragment;
+import com.gaofh.june.databinding.ActivityMainLayoutBinding;
 import com.gaofh.june.fragment.FirstFragment;
 import com.gaofh.june.fragment.HomeFragment;
 import com.gaofh.june.util.DensityUtil;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActivityMainLayoutBinding binding=ActivityMainLayoutBinding.inflate(getLayoutInflater());
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_viewpage_layout);
 //        setContentView(R.layout.activity_main_layout);

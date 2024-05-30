@@ -71,7 +71,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener, Vie
         fg_left_tv.setMovementMethod(new ScrollingMovementMethod());
         chat_bn.setOnClickListener(this);
         shot_bn.setOnClickListener(this);
-        drawable=getResources().getDrawable(R.drawable.rec_shape);
+//        drawable=getResources().getDrawable(R.drawable.rec_shape);
     }
     @Override
     public void onClick(View view) {
@@ -84,11 +84,9 @@ public class FirstFragment extends Fragment implements View.OnClickListener, Vie
               break;
             case R.id.fg_button_shot:
                 fg_left_tv.setDrawingCacheEnabled(true);
-//                bitmap=fg_left_tv.getDrawingCache();
-//                fg_right_iv.setImageBitmap(bitmap);
-//                mHandler.postDelayed(runnable,200);
-
-                fg_right_iv.setImageDrawable(drawable);
+                bitmap=fg_left_tv.getDrawingCache();
+                fg_right_iv.setImageBitmap(bitmap);
+               mHandler.postDelayed(runnable,200);
                 break;
             default:
                 break;

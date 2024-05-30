@@ -89,7 +89,7 @@ public class SubFragment extends Fragment implements View.OnClickListener {
             fgcView=view.findViewById(R.id.fragment_container);
             return view;
         } else if (mParam1.equals("购物")) {
-            return inflater.inflate(R.layout.fragment_home_layout,container,false);
+            return inflater.inflate(R.layout.fragment_mortgage_layout,container,false);
         }else {
             return inflater.inflate(R.layout.activity_viewpage_layout,container,false);
         }
@@ -107,7 +107,7 @@ public class SubFragment extends Fragment implements View.OnClickListener {
             initView(view);
             initEvent();
         }else if (mParam1.equals("科技")){
-          getFragmentManager().beginTransaction().replace(R.id.fragment_container, CompoundButtonFragment.class,savedInstanceState).commit();
+          getFragmentManager().beginTransaction().replace(R.id.fragment_container, MortgageFragment.class,savedInstanceState).commit();
         } else if (mParam1.equals("购物")) {
 
         }else {
